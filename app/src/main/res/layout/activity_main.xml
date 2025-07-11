@@ -86,6 +86,7 @@
 
                 <!-- Danh mục PC -->
                 <LinearLayout
+                    android:id="@+id/layout_pc"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="wrap_content"
@@ -108,6 +109,7 @@
 
                 <!-- Danh mục Phone -->
                 <LinearLayout
+                    android:id="@+id/layout_phone"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="wrap_content"
@@ -129,6 +131,7 @@
 
                 <!-- Danh mục headphone -->
                 <LinearLayout
+                    android:id="@+id/layout_headphone"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="wrap_content"
@@ -150,6 +153,7 @@
 
                 <!-- Danh mục gaming -->
                 <LinearLayout
+                    android:id="@+id/layout_gaming"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="wrap_content"
@@ -171,6 +175,7 @@
 
                 <!-- Danh mục all -->
                 <LinearLayout
+                    android:id="@+id/layout_all"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="wrap_content"
@@ -281,7 +286,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Chi tiết"
+                                    android:text="Xem"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#FF5722"
@@ -294,7 +299,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Thêm giỏ"
+                                    android:text="Thêm"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#4CAF50"
@@ -358,7 +363,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Chi tiết"
+                                    android:text="Xem"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#FF5722"
@@ -371,7 +376,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Thêm giỏ"
+                                    android:text="Thêm"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#4CAF50"
@@ -434,7 +439,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Chi tiết"
+                                    android:text="Xem"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#FF5722"
@@ -447,7 +452,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Thêm giỏ"
+                                    android:text="Thêm"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#4CAF50"
@@ -510,7 +515,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Chi tiết"
+                                    android:text="Xem"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#FF5722"
@@ -523,7 +528,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="Thêm giỏ"
+                                    android:text="Thêm"
                                     android:textSize="14sp"
                                     android:textAllCaps="false"
                                     android:backgroundTint="#4CAF50"
@@ -610,7 +615,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Chi tiết"
+                                android:text="Xem"
                                 android:textSize="14sp"
                                 android:textAllCaps="false"
                                 android:backgroundTint="#FF5722"
@@ -623,7 +628,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Thêm Giỏ"
+                                android:text="Thêm"
                                 android:textSize="14sp"
                                 android:textAllCaps="false"
                                 android:backgroundTint="#4CAF50"
@@ -679,7 +684,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Chi tiết"
+                                android:text="Xem"
                                 android:textSize="14sp"
                                 android:textAllCaps="false"
                                 android:backgroundTint="#FF5722"
@@ -692,7 +697,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Thêm Giỏ"
+                                android:text="Thêm"
                                 android:textSize="14sp"
                                 android:textAllCaps="false"
                                 android:backgroundTint="#4CAF50"

@@ -16,12 +16,15 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
+    LinearLayout layoutPC, layoutPhone, layoutHeadphone, layoutGaming, layoutAll;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -37,6 +40,41 @@ public class MainActivity extends AppCompatActivity {
         Button btnS24 = findViewById(R.id.btnDetail_s24);
         Button btnP47m = findViewById(R.id.btnDetail_p47m);
         LinearLayout btnSettings = findViewById(R.id.btnSettings);
+
+        layoutPC = findViewById(R.id.layout_pc);
+        layoutPhone = findViewById(R.id.layout_phone);
+        layoutHeadphone = findViewById(R.id.layout_headphone);
+        layoutGaming = findViewById(R.id.layout_gaming);
+        layoutAll = findViewById(R.id.layout_all);
+
+        layoutPC.setOnClickListener(v -> {
+            Toast.makeText(this, "Bạn chọn danh mục: PC", Toast.LENGTH_SHORT).show();
+            // startActivity(new Intent(this, ProductListActivity.class).putExtra("category", "PC"));
+        });
+
+        layoutPhone.setOnClickListener(v -> {
+            Toast.makeText(this, "Bạn chọn danh mục: Phone", Toast.LENGTH_SHORT).show();
+        });
+
+        layoutHeadphone.setOnClickListener(v -> {
+            Toast.makeText(this, "Bạn chọn danh mục: Tai Nghe", Toast.LENGTH_SHORT).show();
+        });
+
+        layoutGaming.setOnClickListener(v -> {
+            Toast.makeText(this, "Bạn chọn danh mục: Máy Chơi Game", Toast.LENGTH_SHORT).show();
+        });
+
+        layoutAll.setOnClickListener(v -> {
+            Toast.makeText(this, "Bạn chọn: View All", Toast.LENGTH_SHORT).show();
+        });
+
+        layoutPC.setOnClickListener(v -> openProductList("pc"));
+        layoutPhone.setOnClickListener(v -> openProductList("phone"));
+        layoutHeadphone.setOnClickListener(v -> openProductList("headphone"));
+        layoutGaming.setOnClickListener(v -> openProductList("gaming"));
+        layoutAll.setOnClickListener(v -> openProductList("all"));
+
+
         btnSettings.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, settingActivity.class);
             startActivity(intent);
@@ -174,6 +212,11 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("image", imageResId);
         startActivity(intent);
     }
-
+    // Hàm mở màn hình
+    private void openProductList(String category) {
+        Intent intent = new Intent(this, ProductListActivity.class);
+        intent.putExtra("category", category);
+        startActivity(intent);
+    }
     
 }
